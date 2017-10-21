@@ -1,5 +1,4 @@
-# Balajiganapathi
-This is my personal site for posting any stuff that I find interesting.
+# Topics
 
-## Topics
-Coming soon...
+## Blockchain
+Coming Soon...
