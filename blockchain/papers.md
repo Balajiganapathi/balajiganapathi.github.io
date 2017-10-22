@@ -27,9 +27,20 @@ Bitcoin has emerged as the most successful cryptographic currency in history. Wi
 We provide the first systematic exposition Bitcoin and the many related cryptocurrencies or ‘altcoins.’ Drawing from a scattered body of knowledge, we identify three key components of Bitcoin’s design that can be decoupled. This enables a more insightful analysis of Bitcoin’s properties and future stability. We map the design space for numerous proposed modifications, providing comparative analyses for alternative consensus mechanisms, currency allocation mechanisms, computational puzzles, and key management tools. We survey anonymity issues in Bitcoin and provide an evaluation framework for analyzing a variety of privacy-enhancing proposals. Finally we provide new insights on what we term disintermediation protocols, which absolve the need for trusted intermediaries in an interesting set of applications. We identify three general disintermediation strategies and provide a detailed comparison.
 </i></p>
 
-<h2>Altcoins</h2>
+<h2>Smart contracts</h2>
 <h3><a href='https://www.weusecoins.com/assets/pdf/library/Ethereum_white_paper-a_next_generation_smart_contract_and_decentralized_application_platform-vitalik-buterin.pdf'>Ethereum: A next generation smart contract & decentralized application platform</a>. <i>Vitalik Buterin. 2014</i></h3>
 <h4>Summary</h4>
 <p align='justify'>
 This white paper introduces the Ethereum protocol. It builds upon the concepts used in bitcoin to provide a general purpose, turing complete scripting language that can be used to build arbitrary <i>smart contracts</i>. It generalizes the bitcoin's block chain ledger by viewing it as a global state with each transaction defining a state transition. It gives details of the language including how it will prevent unbounded computation. It also gives various applications of the protocol including token systems, financial derivatives, identity systems, file storage, decentralized autonomous organizations etc. It gives details about the process of how the Ethereum protocol will be bootstrapped and other practical issues.
+</p>
+
+<h2>Proof-of-work</h2>
+<h3><a href='Altcoin://web.cs.dal.ca/~abrodsky/7301/readings/DwNa93.pdf'>Pricing via Processing or Combatting Junk Mail</a>. <i>Dwork & Naor. 1992</i></h3>
+<h4>Summary</h4>
+<p align='justify'>
+This paper proposes a system for limiting junk mail by making the sender solve a <i>cryptographic puzzle</i> (e.g. a Fiat-Shamir based scheme). To allow legitimate users to send bulk emails, the paper uses the concept of <i>shortcuts</i> - which can be bought from a trusted party and helps solve the puzzle much quicker.
+</p>
+<h4>Abstract</h4>
+<p align='justify'>
+We present a computational technique for combatting junk mail, in particular, and controlling access to a shared resource, in general. The main idea is to require a user to compute a moderately hard, but not intractable, function in order to gain access to the resource, thus preventing frivolous use. To this end we suggest several pricing functions, based on, respectively, extracting square roots modulo a prime, the Fiat-Shamir signature scheme, and the Ong-Schnorr-Shamir (cracked) signature scheme.
 </p>
