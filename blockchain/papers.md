@@ -55,3 +55,13 @@ Hashcash is a way to counter denial of service attacks by having the client do a
 Hashcash was originally proposed as a mechanism to throttle systematic abuse of un-metered internet resources such as email, and anonymous remailers in May 1997. Five years on, this paper captures in one place the various applications, improvements suggested and related subsequent publications, and describes initial experience from experiments using hashcash.<br/>
 The hashcash CPU cost-function computes a token which can be used as a proof-of-work. Interactive and non-interactive variants of cost-functions can be constructed which can be used in situations where the server can issue a challenge (connection oriented interactive protocol), and where it can not (where the communication is store–and–forward, or packet oriented) respectively.
 </blockquote>
+
+<h3><a href='http://fc15.ifca.ai/preproceedings/bitcoin/paper_12.pdf'>Cuckoo Cycle: a memory bound graph-theoretic proof-of-work</a>. <i>Tromp. FC. 2015</i></h3>
+<h4>Summary</h4>
+<p align='justify'>
+This paper proposes a new proof-of-work that needs a lot more memory access compared to cpu cycles. This may prevent ASIC miners from having a huge advantage over normal CPU based miners. The proof-of-work in this case consists of finding a fixed length cycle in a large, random, sparse graph. The difficulty can be adjusted based on hash of the solution as well as size of the graph. To reduce memory access, much more CPU cycle needs to be used.
+</p>
+<h4>Abstract</h4>
+<blockquote align='justify'>
+We introduce the first graph-theoretic proof-of-work system, based on finding small cycles or other structures in large random graphs. Such problems are trivially verifiable and arbitrarily scalable, presumably requiring memory linear in graph size to solve efficiently. Our cycle finding algorithm uses one bit per edge, and up to one bit per node. Runtime is linear in graph size and dominated by random access latency, ideal properties for a memory bound proof-of-work. We exhibit two alternative algorithms that allow for a memory-time trade-off (TMTO)—decreased memory usage, by a factor k, coupled with increased runtime, by a factor Ω(k). The constant implied in Ω() gives a notion of memory-hardness, which is shown to be dependent on cycle length, guiding the latter’s choice. Our algorithms are shown to parallelize reasonably well.
+</blockquote>
