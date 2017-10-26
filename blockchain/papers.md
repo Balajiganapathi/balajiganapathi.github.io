@@ -65,3 +65,15 @@ This paper proposes a new proof-of-work that needs a lot more memory access comp
 <blockquote align='justify'>
 We introduce the first graph-theoretic proof-of-work system, based on finding small cycles or other structures in large random graphs. Such problems are trivially verifiable and arbitrarily scalable, presumably requiring memory linear in graph size to solve efficiently. Our cycle finding algorithm uses one bit per edge, and up to one bit per node. Runtime is linear in graph size and dominated by random access latency, ideal properties for a memory bound proof-of-work. We exhibit two alternative algorithms that allow for a memory-time trade-off (TMTO)—decreased memory usage, by a factor k, coupled with increased runtime, by a factor Ω(k). The constant implied in Ω() gives a notion of memory-hardness, which is shown to be dependent on cycle length, guiding the latter’s choice. Our algorithms are shown to parallelize reasonably well.
 </blockquote>
+
+<h3><a href='http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final24.pdf'>(Short Paper): PieceWork: Generalized Outsourcing Control for Proofs of Work</a>. <i>Daian et al. 2017</i></h3>
+<h4>Summary</h4>
+<p align='justify'>
+This paper proposes a scheme of splitting the proof-of-work puzzles into two parts - an inner <i>puzzlet</i> and outer puzzle. The puzzlets can be outsourced to others in a pool. The difficulty of inner and outer puzzles can be set independently based on how much pooling should be allowed. Further, the inner puzzlets can be another useful puzzle like hashcoin. The paper also gives an easy way to extend the scheme so that outsourcing is not feasible.
+</p>
+<h4>Abstract</h4>
+<blockquote align='justify'>
+Most prominent cryptocurrencies utilize proof of work (PoW) to secure their operation, yet PoW suffers from two key undesirable properties. First, the work done is generally wasted, not useful for anything but the gleaned security of the cryptocurrency. Second, PoW is naturally outsourceable, leading to inegalitarian concentration of power in the hands of few so-called pools that command large portions of the system’s computation power.  <br/>
+We introduce a general approach to constructing PoW called PieceWork that tackles both issues. In essence, PieceWork allows for a configurable fraction of PoW computation to be outsourced to workers. Its controlled outsourcing allows for reusing the work towards additional goals such as spam prevention and DoS mitigation, thereby reducing PoW waste.  Meanwhile, PieceWork can be tuned to prevent excessive outsourcing.  Doing so causes pool operation to be significantly more costly than today.  This disincentivizes aggregation of work in mining pools.
+</blockquote>
+
